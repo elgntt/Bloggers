@@ -1,0 +1,331 @@
+.container {
+      max-width: 90%;
+      margin: 0 auto;
+}
+
+/* -------------- Header --------------- */
+
+header {
+      width: 100%;
+      background-color: #FCA600;
+      border-bottom: 1px solid black;
+      font-family: 'Inter', sans-serif;
+}
+.header__wrapper {
+      height: 108px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.menu ul {
+      display: flex;
+      column-gap: 58px;
+      font-size: 16px;
+      font-weight: 600;
+}
+@media (max-width:750px) {
+      .menu {
+            display: none;
+      }
+}
+.logo {
+      color: black;
+      font-size: 36px;
+      font-weight: 700;
+}
+li > a {
+      color: black;
+}
+.auth ul {
+      display: flex;
+      column-gap: 33px;
+      font-weight: 600;
+      column-gap: 33px;
+      align-items: center;
+}
+
+@media (max-width:500px) {
+      .auth li:first-child {
+            display: none;
+      }
+}
+/* ---------------- Banner -------------- */
+
+.banner {
+      background-color: #FCA600;
+      border-bottom: 1px solid black;
+      font-family: 'Ubuntu', sans-serif;
+}
+
+.banner__wrapper {
+      min-height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.banner__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.banner__text h1 {
+      font-size: 64px;
+}
+
+@media (max-width:705px) {
+      .banner__text h1 {
+            font-size: 48px;
+      }
+}
+
+@media (max-width:430px) {
+      .banner__text h1 {
+            font-size: 36px;
+      }
+}
+
+.banner__text blockquote {
+      font-size: 20px;
+      margin: 34px 0;
+}
+
+.button {
+      padding: 12px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+}
+.button:hover {
+      color: black;
+      background-color: white;
+}
+/* --------------------- Main -------------------------- */
+
+
+main {
+      font-family: 'Inter', sans-serif;
+}
+
+section {
+      border-bottom: 1px solid rgb(197, 197, 197);
+      padding: 45px 0;
+}
+@media (max-width:905px) {
+      section {
+            padding: 25px 0;
+      }
+}
+/* ------------------- Section blogs-card ------------ */
+
+.blogs-cards__header {
+      margin-bottom: -5px;
+}
+.row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+}
+.cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+.card {
+      display: flex;
+      max-width: 310px;
+      margin-top: 20px;
+}
+@media (max-width:1070px) {
+      .card {
+            display: flex;
+            max-width: 50%;
+            margin-top: 20px;
+      }
+}
+
+@media (max-width:740px) {
+      .card {
+            display: flex;
+            max-width: 100%;
+            margin-top: 20px;
+      }
+}
+
+.card-number {
+      color: #f0f0f0;
+      font-size: 36px;
+      font-weight: 700;
+      margin-right: 14px;
+      line-height: 0.8;
+}
+.card-author {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      margin-bottom: 4px;
+}
+.circle {
+      height: 25px;
+      width: 25px;
+      border-radius: 25px;
+      background-color: grey;
+      text-align:center;
+
+      background-image: url('/img/mustafa.jpg');
+      background-repeat: no-repeat;
+      background-position: center();
+      background-size: cover;
+}
+
+.created-time {
+      color: #828282;
+      font-size: 13px;
+}
+
+/* ------------------- Section blogs-short ------------ */
+@media (max-width:905px) {
+      .blogs {
+            margin-top: 25px;
+      }
+}
+.blogs-short {
+      display: flex;
+}
+.blogs-short__wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      column-gap: 25px;
+}
+@media (max-width:905px) {
+      .blogs-short__wrapper {
+            display: block;
+      }
+}
+.card-short {
+      display: flex;
+      align-items: center;
+      margin-bottom: 55px;
+      column-gap: 15px;
+}
+
+.card__title {
+      font-size: 18px;
+      max-height: 45px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-weight:600;
+      margin-bottom: 8px;
+}
+
+.card__text {
+      max-height: 35px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-bottom: 15px;
+}
+@media (max-width:700px) {
+      .card__title {
+            font-size: 14px;
+            max-height: 35px;
+      }
+      .card__text p {
+            display: none;
+      }
+      
+}
+.card-short__img {
+      width: 200px;
+      height: 134px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+@media (max-width:700px) {
+      .card-short__img {
+            width: 150px;
+            height: 100px;
+      }
+}
+
+@media (max-width:525px) {
+      .card-short__img {
+            width: 100px;
+            height: 100px;
+      }
+}
+
+
+.card-short__img img {
+      width: inherit;
+      height: inherit;
+
+      object-fit: cover;
+}
+
+/* -------------------- Category ----------------- */
+.category {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;   
+
+}
+@media (max-width: 905px) {
+      .category {
+            max-width: 100%;
+            border-bottom: 1px solid rgb(197, 197, 197);
+      }
+}
+@media (max-width:700px) {
+      .category h3 {
+            font-size: 14px;
+      }
+} 
+.category-btn {
+      background-color: #dadada;
+
+      font-size: 14px;
+      height: 35px;
+      padding: 11px 18px;
+      transition: background-color .5s;
+      color: rgb(58, 58, 58);
+      margin-bottom: 5px;
+}
+
+@media (max-width:1300px) {
+      .category-btn {
+            padding: 11px 15px;
+      }
+}
+
+.category-btn:hover {
+      background-color: #cacaca;
+      color: rgb(58, 58, 58);
+
+}
+.buttons {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      column-gap: 6px;
+      padding: 20px 0;
+}
+
+@media (max-width:905px) {
+      .buttons {
+            padding: 10px 0;
+      }
+}
+
+
+.category .more {
+      color: #16B739;
+      padding-bottom: 10px;
+}
