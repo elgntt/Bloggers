@@ -176,7 +176,7 @@ section {
       background-color: grey;
       text-align:center;
 
-      background-image: url('/img/mustafa.jpg');
+      background-image: url('../img/mustafa.jpg');
       background-repeat: no-repeat;
       background-position: center();
       background-size: cover;
