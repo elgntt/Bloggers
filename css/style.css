@@ -12,7 +12,7 @@ header {
       font-family: 'Inter', sans-serif;
 }
 .header__wrapper {
-      height: 108px;
+      height: 70px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -90,11 +90,10 @@ li > a {
 }
 
 .button {
-      padding: 12px 32px;
+      padding: 14px 32px;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 50px;
       background-color: black;
       color: white;
       border-radius: 20px;
@@ -102,6 +101,9 @@ li > a {
 .button:hover {
       color: black;
       background-color: white;
+      -webkit-box-shadow: -6px 3px 81px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -6px 3px 81px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: -6px 3px 81px 5px rgba(0, 0, 0, 0.2);
 }
 /* --------------------- Main -------------------------- */
 
@@ -131,35 +133,30 @@ section {
 .blogs-cards__header {
       margin-bottom: -5px;
 }
-.row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 35px;
-}
+
 .cards {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
 }
+
 .card {
       display: flex;
       max-width: 310px;
       margin-top: 20px;
 }
+
+
 @media (max-width:1070px) {
       .card {
-            display: flex;
             max-width: 50%;
-            margin-top: 20px;
       }
 }
 
 @media (max-width:740px) {
       .card {
-            display: flex;
             max-width: 100%;
-            margin-top: 20px;
       }
 }
 
@@ -212,7 +209,12 @@ section {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
-      column-gap: 40px;
+      column-gap: 60px;
+}
+@media (max-width:1270px) {
+      .blogs-short__wrapper {
+            column-gap: 40px;
+      }
 }
 @media (max-width:905px) {
       .blogs-short__wrapper {
@@ -225,6 +227,11 @@ section {
       margin-bottom: 55px;
       column-gap: 15px;
 }
+@media (max-width:700px) {
+      .card-short {
+            margin-bottom: 30px;
+      }
+}
 
 .card__title {
       font-size: 18px;
@@ -233,6 +240,12 @@ section {
       overflow: hidden;
       font-weight:600;
       margin-bottom: 8px;
+}
+
+@media (max-width:700px) {
+      .card__title {
+            margin-bottom: 0px;
+      }
 }
 
 .card__text {
@@ -339,14 +352,15 @@ section {
       }
 }
 
-
 .category .more {
       color: #16B739;
       padding-bottom: 25px;
 }
+
 @media (max-width:700px) {
       .category .more {
             color: #16B739;
             padding-bottom: 20px;
+            line-height: 0.8;
       }
 }

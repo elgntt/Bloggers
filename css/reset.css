@@ -6,6 +6,11 @@
 
 a {
       text-decoration: none;
+      outline: none !important;
+}
+a:active {
+      border: none;
+      background: none;
 }
 ul, li {
       list-style-type: none;
