@@ -169,6 +169,11 @@ section {
       column-gap: 7px;
       margin-bottom: 4px;
 }
+@media (max-width:700px) {
+      .card-author {
+            font-size: 14px;
+      }
+}
 .circle {
       height: 25px;
       width: 25px;
