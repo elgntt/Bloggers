@@ -119,6 +119,13 @@ section {
             padding: 25px 0;
       }
 }
+@media (max-width:700px) {
+      @media (max-width:905px) {
+            section {
+                  padding: 20px 0;
+            }
+      }
+}
 /* ------------------- Section blogs-card ------------ */
 
 .blogs-cards__header {
@@ -237,7 +244,7 @@ section {
 @media (max-width:700px) {
       .card__title {
             font-size: 14px;
-            max-height: 35px;
+            max-height: 38px;
       }
       .card__text p {
             display: none;
@@ -284,7 +291,7 @@ section {
 }
 @media (max-width: 905px) {
       .category {
-            max-width: 100%;
+            max-width: 100vh;
             border-bottom: 1px solid rgb(197, 197, 197);
       }
 }
@@ -335,5 +342,11 @@ section {
 
 .category .more {
       color: #16B739;
-      padding-bottom: 10px;
+      padding-bottom: 25px;
+}
+@media (max-width:700px) {
+      .category .more {
+            color: #16B739;
+            padding-bottom: 20px;
+      }
 }
