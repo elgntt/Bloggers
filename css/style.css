@@ -190,7 +190,7 @@ section {
       background-size: cover;
 }
 
-.created-time {
+.published-time {
       color: #828282;
       font-size: 13px;
 }
@@ -291,7 +291,8 @@ section {
       width: inherit;
       height: inherit;
 
-      object-fit: cover;
+      object-fit: contain;
+
 }
 
 /* -------------------- Category ----------------- */
@@ -335,7 +336,7 @@ section {
 .category-btn:hover {
       background-color: #cacaca;
       color: rgb(58, 58, 58);
-
+      box-shadow: none;
 }
 .buttons {
       display: flex;
