@@ -143,10 +143,9 @@ section {
 
 .card {
       display: flex;
-      max-width: 310px;
+      max-width: 30%;
       margin-top: 20px;
 }
-
 
 @media (max-width:1070px) {
       .card {
@@ -235,7 +234,7 @@ section {
 
 .card__title {
       font-size: 18px;
-      max-height: 45px;
+      max-height: 50px;
       text-overflow: ellipsis;
       overflow: hidden;
       font-weight:600;
